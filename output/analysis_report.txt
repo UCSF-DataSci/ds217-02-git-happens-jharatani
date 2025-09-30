@@ -1,0 +1,12 @@
+Student Analysis Report
+==============================
+Total students: 7
+Average grade: 92.6
+Highest grade: 100.0 (by: George, Gal)
+Math students: 2
+
+Counts by subject:
+  English: 1
+  History: 2
+  Math: 2
+  Science: 2
