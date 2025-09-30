@@ -1,62 +1,66 @@
 COMPREHENSIVE STUDENT ANALYSIS REPORT
 ==================================================
 
-Report generated on: 2025-09-29 16:41:01
+Report generated on: 2025-09-29 17:54:16
 
 BASIC STATISTICS
 --------------------
 Total students: 7
-Average grade: 10.6
-Highest grade: 12.0
-Lowest grade: 9.0
-Grade range: 3.0
+Average grade: 92.6
+Highest grade: 100.0
+Lowest grade: 70.0
+Grade range: 30.0
 
 GRADE DISTRIBUTION
 --------------------
-A (90-100): 0 students (0.0%)
-B (80-89): 0 students (0.0%)
-C (70-79): 0 students (0.0%)
+A (90-100): 5 students (71.4%)
+B (80-89): 1 students (14.3%)
+C (70-79): 1 students (14.3%)
 D (60-69): 0 students (0.0%)
-F (0-59): 7 students (100.0%)
+F (0-59): 0 students (0.0%)
 
 TOP PERFORMERS (90+)
 --------------------
-No students scored 90 or above
+George: 100.0 (Math)
+Hannah: 98.0 (Science)
+Gal: 100.0 (Math)
+Ariel: 95.0 (Science)
+Kathy: 99.0 (History)
 
 INDIVIDUAL STUDENT RECORDS
 ------------------------------
 Name: George
   Age: 15
-  Grade: 10.0
+  Grade: 100.0
   Subject: Math
 
 Name: Hannah
   Age: 14
-  Grade: 9.0
+  Grade: 98.0
   Subject: Science
 
 Name: Ian
   Age: 16
-  Grade: 11.0
+  Grade: 86.0
   Subject: History
 
 Name: Jane
   Age: 15
-  Grade: 10.0
+  Grade: 70.0
   Subject: English
 
 Name: Gal
   Age: 16
-  Grade: 11.0
+  Grade: 100.0
   Subject: Math
 
 Name: Ariel
-  Age: 14
-  Grade: 12.0
+  Age: 17
+  Grade: 95.0
   Subject: Science
 
 Name: Kathy
   Age: 15
-  Grade: 11.0
+  Grade: 99.0
   Subject: History
 

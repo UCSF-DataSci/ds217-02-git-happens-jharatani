@@ -1,8 +1,8 @@
 Student Analysis Report
 ==============================
 Total students: 7
-Average grade: 10.6
-Highest grade: 12.0 (by: Ariel)
+Average grade: 92.6
+Highest grade: 100.0 (by: George, Gal)
 Math students: 2
 
 Counts by subject:
