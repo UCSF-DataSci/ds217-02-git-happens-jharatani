@@ -36,5 +36,7 @@ echo "Python template files created"
 
 echo "Project environment setup complete!"
 
+#End of shell script!
+
 
 
