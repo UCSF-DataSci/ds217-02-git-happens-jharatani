@@ -275,7 +275,7 @@ pass
     #TODO: Basics stats, grade distribution, top performers, individual records
     pass
 
-ef main():
+def main():
     print("Advanced Student Analysis - Module Usage")
     print("=" * 45)
 
@@ -328,5 +328,5 @@ echo "Project environment setup complete!"
 
 #End of shell script!
 
-
+chmod +x scripts/process_data.sh
 
