@@ -56,6 +56,13 @@ def calculate_average_grade(students):
         return 0.0
     return sum(grades) / len(grades)
 
+def calculate_average_age(students):
+    """Return average age as a float; uses only numeric grades."""
+    ages = [s["age"] for s in students if isinstance(s.get("age"), (int, float))]
+    if not ages:
+        return 0.0
+    return sum(ages) / len(ages)
+
 
 def count_math_students(students):
     """Count students whose subject is Math (case-insensitive)."""
@@ -73,6 +80,7 @@ def generate_report():
     students = load_students(CSV_PATH)
     total_students = len(students)
     average = calculate_average_grade(students)
+    age_average = calculate_average_age(students)
     math_count = count_math_students(students)
     highest_grade = find_highest_grade(students)
 
@@ -94,6 +102,7 @@ def generate_report():
     lines.append("=" * 30)
     lines.append(f"Total students: {total_students}")
     lines.append(f"Average grade: {average:.1f}")   # .1f formatting as required
+    lines.append(f"Average age: {age_average:.1f}")
     lines.append(f"Highest grade: {highest_grade:.1f} (by: {', '.join(top_students) if top_students else 'N/A'})")
     lines.append(f"Math students: {math_count}")
     lines.append("")

@@ -2,6 +2,7 @@ Student Analysis Report
 ==============================
 Total students: 7
 Average grade: 92.6
+Average age: 15.4
 Highest grade: 100.0 (by: George, Gal)
 Math students: 2
 
