@@ -1,8 +1,8 @@
-name, age, grade, subject
-George, 15, 100, Math
-Hannah, 14, 98, Science
-Ian, 16, 86, History
-Jane, 15, 70, English
-Gal, 16, 100, Math
-Ariel, 17, 95, Science
-Kathy, 15, 99, History
+name,age,grade,subject
+George,15,100,Math
+Hannah,14,98,Science
+Alice,16,86,History
+Jane,15,70,English
+Gal,16,100,Math
+Ariel,17,95,Science
+Kathy,15,99,History
