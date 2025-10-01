@@ -3,7 +3,7 @@ echo "Setting up project environment..."
 mkdir -p src data output
 echo "Directories created" 
 
-cat > data/students.csv <<EOL
+cat > data/students.csv << 'EOF'
 name,age,grade,subject
 George,15,100,Math
 Hannah,14,98,Science
@@ -12,10 +12,10 @@ Jane,15,70,English
 Gal,16,100,Math
 Ariel,17,95,Science
 Kathy,15,99,History
-EOL
+EOF
 echo "students.csv created with sample data"
 
-cat > src/data_analysis.py <<EOL
+cat > src/data_analysis.py << 'EOF'
 # data_analysis.py
 # TODO: implement main entry point
 
@@ -160,9 +160,9 @@ if __name__ == "__main__":
     main()
 
 
-EOL
+EOF
 
-cat > src/data_analysis_function.py <<EOL
+cat > src/data_analysis_function.py << 'EOF'
 # data_analysis_function.py
 
 from pathlib import Path 
@@ -320,7 +320,7 @@ pass
 
 
 
-EOL
+EOF
 
 echo "Python template files created"
 
@@ -328,5 +328,6 @@ echo "Project environment setup complete!"
 
 #End of shell script!
 
-chmod +x scripts/process_data.sh
+chmod +x setup_project.sh
+git add setup_project.sh
 

@@ -15,15 +15,16 @@ Student Grade Analysis - Function Version
 
 import os
 
-CSV_PATH = "/mnt/c/Users/jazmi/OneDrive/Desktop/UCSF/datasci217/Assignments/UCSF-DataSci/ds217-02-git-happens-jharatani/data/students.csv"
+# Use a relative path so scripts work on CI and across platforms
+CSV_PATH = "data/students.csv"
 
-def load_students(CSV_PATH):
+def load_students(file_path):
     """Read CSV using open() + readlines(), split by commas, return list of student dicts."""
     try:
-        with open(CSV_PATH, "r", encoding="utf-8", newline="") as f:
+        with open(file_path, "r", encoding="utf-8", newline="") as f:
             lines = f.readlines()
     except FileNotFoundError:
-        raise FileNotFoundError(f"[ERROR] File not found: {CSV_PATH}")
+        raise FileNotFoundError(f"[ERROR] File not found: {file_path}")
 
     # Remove blanks, keep header, skip it later
     lines = [ln.strip() for ln in lines if ln.strip()]
