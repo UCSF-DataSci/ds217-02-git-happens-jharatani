@@ -3,7 +3,7 @@
 
 #!/usr/bin/env python3
 """
-Student Grade Analysis - Function Version
+Student Grade Analysis - Modular Function Version
 """
 
 from pathlib import Path #Did not want to repeat loading of data, loading it from data_analysis.py
