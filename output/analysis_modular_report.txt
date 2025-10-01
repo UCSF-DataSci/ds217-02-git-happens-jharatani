@@ -1,7 +1,7 @@
 COMPREHENSIVE STUDENT ANALYSIS REPORT
 ==================================================
 
-Report generated on: 2025-09-29 17:54:16
+Report generated on: 2025-10-01 12:05:54
 
 BASIC STATISTICS
 --------------------
@@ -39,7 +39,7 @@ Name: Hannah
   Grade: 98.0
   Subject: Science
 
-Name: Ian
+Name: Alice
   Age: 16
   Grade: 86.0
   Subject: History

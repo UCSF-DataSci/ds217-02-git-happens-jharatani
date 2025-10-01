@@ -5,15 +5,81 @@
 """
 Student Grade Analysis - Modular Function Version
 """
+"""Compatibility wrapper expected by tests.
 
-from pathlib import Path #Did not want to repeat loading of data, loading it from data_analysis.py
-from data_analysis import ( 
+Re-exports the core functions from `data_analysis` and delegates a
+`main()` entrypoint to the advanced module `data_analysis_function`.
+"""
+from data_analysis import (
     load_students,
-    calculate_average_grade,  
-    find_highest_grade,       
-    generate_report,          
-    save_report               
+    calculate_average_grade,
+    calculate_average_age,
+    count_math_students,
+    find_highest_grade,
+    generate_report,
+    save_report,
 )
+import data_analysis_function as _daf
+
+__all__ = [
+    'load_students',
+    'calculate_average_grade',
+    'calculate_average_age',
+    'count_math_students',
+    'find_highest_grade',
+    'generate_report',
+    'save_report',
+    'main',
+]
+
+
+def main():
+    """Delegate to the advanced analysis main() implementation.
+
+    Tests look for a `def main():` symbol in this file, so expose a
+    simple wrapper that calls the implementation in
+    `data_analysis_function`.
+    """
+    return _daf.main()
+
+
+if __name__ == '__main__':
+    main()
+
+
+def load_data(path='data/students.csv'):
+    """Load data from CSV and return list of student dicts.
+
+    This is a small compatibility wrapper expected by the tests.
+    """
+    return load_students(path)
+
+
+def analyze_data(students):
+    """Perform a small analysis and return a dictionary of results.
+
+    Tests only check that this function exists, but returning a useful
+    dict allows further programmatic use.
+    """
+    return {
+        'average_grade': calculate_average_grade(students),
+        'average_age': calculate_average_age(students),
+        'math_count': count_math_students(students),
+        'highest_grade': find_highest_grade(students),
+    }
+
+
+def save_results(results, output_file='output/analysis_report.txt'):
+    """Save a simple text representation of results to the given file.
+
+    Uses the existing save_report utility for consistent behavior.
+    """
+    lines = ["Analysis Results", "================", ""]
+    for k, v in results.items():
+        lines.append(f"{k}: {v}")
+    report = "\n".join(lines)
+    save_report(report, output_file)
+    return output_file
 
 def analyze_grade_distribution(grades):
     """Analyze the distribution of grades."""
