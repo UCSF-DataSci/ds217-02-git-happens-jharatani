@@ -19,6 +19,7 @@ from data_analysis import (
     generate_report,
     save_report,
 )
+from pathlib import Path
 import data_analysis_function as _daf
 
 __all__ = [
